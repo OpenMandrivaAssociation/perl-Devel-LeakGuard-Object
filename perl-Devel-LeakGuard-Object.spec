@@ -1,15 +1,15 @@
 %define upstream_name    Devel-LeakGuard-Object
-%define upstream_version 0.06
+%define upstream_version 0.08
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Scoped object leak checking
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/AndyA/Devel--LeakGuard--Object
+Source0:    https://cpan.metacpan.org/authors/id/P/PT/PTC/Devel-LeakGuard-Object-%{upstream_version}.tar.gz
 
 BuildRequires: perl(List::Util)
 BuildRequires: perl(Scalar::Util)
