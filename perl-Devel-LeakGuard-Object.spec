@@ -1,15 +1,13 @@
 %define upstream_name    Devel-LeakGuard-Object
-%define upstream_version 0.08
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.08
+Release:    2
 
 Summary:    Scoped object leak checking
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/AndyA/Devel--LeakGuard--Object
-Source0:    https://cpan.metacpan.org/authors/id/P/PT/PTC/Devel-LeakGuard-Object-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/P/PT/PTC/Devel-LeakGuard-Object-%{version}.tar.gz
 
 BuildRequires: perl(List::Util)
 BuildRequires: perl(Scalar::Util)
@@ -32,7 +30,7 @@ any tracked classes so that it can maintain a count of blessed objects
 per-class.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
